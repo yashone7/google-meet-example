@@ -1,0 +1,285 @@
+ <div class="my-root">
+      <p class="box-2">this is a test paragraph</p>
+    </div>
+
+    html {
+  font-size: 10px;
+}
+
+.box-1 {
+  font-size: 2rem;
+}
+
+.my-root {
+  font-size: 15px;
+}
+
+.box-2 {
+  font-size: 2em;
+}
+
+
+
+* -> 0
+
+tag names - 1
+
+classes, attributes, pseudo classes -> 10
+
+id -> 1000
+
+inline - 10,000
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body {
+  min-height: 50vh;
+  width: 900px;
+  height: 900px;
+  min-width: 50vw;
+} */
+
+.box {
+  border: 1px solid rgb(192, 57, 57);
+  border-radius: 10px;
+  padding: 5em;
+  background-color: aqua;
+  margin: 1em 2em;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.primary-button {
+  background-color: blueviolet;
+}
+
+#test {
+  font-weight: bold;
+}
+
+/* #submit {
+  background-color: coral;
+} */
+
+.my-button {
+  background-color: #007aff;
+  padding: 1.2em;
+  color: aliceblue;
+  margin: 10em;
+  border: 0;
+}
+
+.my-button:hover {
+  background-color: rgb(19, 146, 19);
+  color: burlywood;
+}
+
+.my-button:focus {
+  border-color: chartreuse;
+  border-radius: 10px;
+}
+
+.my-button:active {
+  background-color: cornflowerblue;
+}
+
+/* div p {
+  color: #007aff;
+  font-size: 1.4em;
+}
+
+div > p {
+  color: #00ff15;
+} */
+
+/* div ~ p {
+  background-color: yellow;
+  color: black;
+}
+
+div + p {
+  background-color: aqua;
+  color: crimson;
+} */
+
+/* .btn {
+  border: 0;
+  padding: 1em 1.2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6em;
+  margin: 1em;
+}
+
+.btn-primary {
+  background-color: #3c4cdb;
+}
+
+.btn-rounded {
+  border-radius: 1.6em;
+} */
+
+/* 
+
+  trbl -> top right bottom left
+  y x - y -> top and bottom x -> left and right
+  x y z _
+
+*/
+
+/* p {
+  color: #007aff;
+}
+
+p {
+  color: rgb(226, 116, 43);
+} */
+
+
+ <nav class="container">
+      <div class="nav-left">
+        <a href="#">
+          <img src="assets/logo.svg" alt="Brand logo" class="brand-logo" />
+        </a>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-list">
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  margin: 1em 1.2em;
+  align-items: center;
+  padding: 0 0.8em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.brand-logo {
+  width: 130px;
+  height: auto;
+}
+
+.nav-right {
+  width: 30%;
+  margin: 0 2em;
+}
+
+.nav-list {
+  display: flex;
+  /* justify-content: flex-start; */
+  justify-content: space-evenly;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.1em;
+  list-style-type: none;
+}
+
+ul.nav-list > li > a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+  transition: border-width 0.5s linear;
+}
+
+ul.nav-list > li > a:hover {
+  color: rgb(153, 0, 255);
+  border-bottom: 2px solid rgb(153, 0, 255);
+}

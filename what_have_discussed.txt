@@ -1,0 +1,17 @@
+css units of measurement
+==========================
+
+relative units
+em - relative to nearest parent
+rem - relative to the root element
+% - relative units
+
+absolute units
+vh, vw - viewport height and width
+in, pt - inches and points -- useful for printers 
+px - pixels
+
+css box model -- content-box, border-box
+==========================================
+
+text-transform, font-size, linking css
